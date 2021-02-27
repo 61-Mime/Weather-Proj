@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Weather Data</h1>
+
+    <p>
+        <a href="http://localhost:3000/">Back</a>
+    </p>
+
+    <p>
+        <b>Filter by: </b>
+        
+        <form>
+            <input type="radio" id="lat" name="filter" value="lat">
+            <label for="lat">Latitude</label>
+
+            <input type="radio" id="lon" name="filter" value="lon">
+            <label for="lon">Longitude</label>
+
+            <input type="radio" id="name" name="filter" value="name">
+            <label for="name">Name</label>
+            
+            <input type="radio" id="timestamp" name="filter" value="timestamp">
+            <label for="timestamp">Timestamp</label>
+            
+            <input type="radio" id="id" name="filter" value="id">
+            <label for="id">ID</label>
+        </form>
+
+        <input type="text" id="dbSearch" style="margin-top: 0.5cm;"> <br>
+        <input type="button" id="search" value="Search" style="margin-top: 0.5cm;">
+    </p>
+
+    <p style="margin-top: 0.5cm;" id="history">
+    <script src="all.js" type="text/javascript"></script>
+    </p>
+
+</body>
+</html>

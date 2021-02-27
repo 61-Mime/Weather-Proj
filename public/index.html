@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-signin-client_id" content="958968707600-fs9roujs550k5b7va3cu5jgu14k8m82u.apps.googleusercontent.com">
+    <meta charset="UTF-8">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn" style="float: right"></div>
+    <div class="header">
+        <h1>Weather Data App</h1>
+    </div>
+    
+    <script src="./locationWeather.js"></script>
+
+    <p>
+        <a href="http://localhost:3000/all.html">History</a>
+    </p>
+
+    <p>
+        Latitude: <span id="latitude"></span>&deg<br />
+        Longitude: <span id="longitude"></span>&deg
+    </p>
+
+    <p>
+        Name <input type="text" id="name"> <br>
+        Location: <a href="something" id="map-link"></a>
+    </p>
+
+    <p>
+        <div class="wrapper" id="wrapper">
+            <input type="button" id="showWeatherList" style="display: none;" value="Show"><div class="arrow" id="displayArrow"></div>
+        </div>
+       
+        <h2 id="weatherData" style="display: none;">Weather Data:</h2>
+        <ul id="weatherList" style="display: none;">
+                        <li>
+                            <b>Name: </b> <span id="weatherName"></span>
+                        </li>
+                        <li>
+                            <b>Country: </b> <span id="weatherCountry"></span>
+                        </li>
+                        <li>
+                            <b>Main: </b> <span id="weatherMain"></span>
+                        </li>
+                        <li>
+                            <b>Description: </b> <span id="weatherDescription"></span>
+                        </li>
+                        <li>
+                            <b>Temp: </b> <span id="weatherTemp"></span>
+                        </li>
+                        <li>
+                            <b>Feels Like: </b> <span id="weatherFeelsLike"></span>
+                        </li>
+                        <li>
+                            <b>Temp Min: </b> <span id="weatherTempMin"></span>
+                        </li>
+                        <li>
+                            <b>Temp Max: </b> <span id="weatherTempMax"></span>
+                        </li>
+                        <li>
+                            <b>Humidity: </b> <span id="weatherHumidity"></span>
+                        </li>
+                        <li>
+                            <b>Timezone: </b> <span id="weatherTimezone"></span>
+                        </li>
+        </ul>
+    </p>
+
+    <input type="button" value="Submit" id="submit" style="float: left;"></input>
+</body>
+</html>

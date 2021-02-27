@@ -1,0 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* padding: 4em 1em; */
+    color: #566b78;
+}
+
+/* Weather Data */
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+/* Links */
+a {
+    color: #ff7400;
+}
+
+/* Header */
+/* Header Image */
+.header {
+    background-color: #263d36;
+    background-image: url("images/header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+    max-width: none;
+}
+
+/* Header Text Color */
+.header h1 {
+    color: #ffffff;
+}
+
+/* Google sign in */
+.g-signin2 {
+    margin-right: -350px;
+}
+
+/* Submit Button */
+#submit {
+    background: #566b78;
+    color: #fff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: block;
+    width: 100px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Toggle button and arrow wrapper class */
+#wrapper{
+    border:2px #000000;
+    background-color: #8d8d8d;
+    width: 74px;
+    
+}
+
+/* Toggle the Weather Data Display Button */
+#showWeatherList {
+    display: inline-block;
+    background: #566b78;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 4px;
+    border-color: rgb(0, 0, 0);
+}
+
+#weatherData,
+#weatherList {
+    transition: 1s;
+}
+
+/* Arrows */
+.arrow {
+    background: #8d8d8d;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    transition: .5s;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff #ffffff;
+    transform: rotate(-45deg);
+    transition: 0.1s;
+}
+
+/* When the Display Weather Data Button is clicked */
+/* .arrow:active{
+    transform: rotate(135deg);
+} */
